@@ -235,7 +235,7 @@ Discover the  <a href="https://scholar.google.com/citations?hl=en&user=gGcRkpYAA
     <LI>
     <B style="color: #224b8d">MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning
 </B><BR>
-<B>Xiangru Tang</B>, Anni Zou*, Zhuosheng Zhang, Yilun Zhao, Xingyao Zhang, Arman Cohan, Mark Gerstein.<BR>
+<B>Xiangru Tang*</B>, Anni Zou*, Zhuosheng Zhang, Yilun Zhao, Xingyao Zhang, Arman Cohan, Mark Gerstein.<BR>
       arXiv, 2023<BR>
       [<a href="https://arxiv.org/abs/2311.10537">PDF</a>]
       [<a href="javascript:toggleBibtex('medagents_abs')" target=_self>Abstract</a>]
@@ -303,6 +303,42 @@ Large language models have shown promising performance in code generation benchm
   year={2023}
 }
               </pre>
+       </div>
+    </LI>
+</UL>
+
+<UL>
+    <LI>
+    <B style="color: #224b8d">Investigating Data Contamination in Modern Benchmarks for Large Language Models
+
+</B><BR>
+Chunyuan Deng, Yilun Zhao, <B>Xiangru Tang</B>, Mark Gerstein, Arman Cohan
+<BR>
+      arXiv, 2023<BR>
+      [<a href="https://arxiv.org/abs/2311.09783">PDF</a>]
+      [<a href="javascript:toggleBibtex('InvestigatingData_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('InvestigatingData_bib')" target=_self>Bib</a>]
+	
+	<div id=InvestigatingData_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Recent observations have underscored a disparity between the inflated benchmark scores and the actual performance of LLMs, raising concerns about the potential contamination of evaluation benchmarks. This issue is especially critical for closed-source models and certain open-source models where training data transparency is lacking. In this paper, we study data contamination by proposing two methods tailored for both open-source and proprietary LLMs. We first introduce a retrieval-based system to explore potential overlaps between evaluation benchmarks and pretraining corpora. We further present a novel investigation protocol named Testset Slot Guessing (TS-Guessing), applicable to both open and proprietary models. This approach entails masking a wrong answer in a multiple-choice question and prompting the model to fill in the gap. Additionally, it involves obscuring an unlikely word in an evaluation example and asking the model to produce it. We find that certain commercial LLMs could surprisingly guess the missing option in various test sets. Specifically, in the TruthfulQA benchmark, we find that LLMs exhibit notable performance improvement when provided with additional metadata in the benchmark. Further, in the MMLU benchmark, ChatGPT and GPT4 demonstrated an exact match rate of 52% and 57%, respectively, in guessing the missing options in benchmark test data. We hope these results underscore the need for more robust evaluation methodologies and benchmarks in the field.			    </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=InvestigatingData_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@article{deng2023investigating,
+  title={Investigating Data Contamination in Modern Benchmarks for Large Language Models},
+  author={Deng, Chunyuan and Zhao, Yilun and Tang, Xiangru and Gerstein, Mark and Cohan, Arman},
+  journal={arXiv preprint arXiv:2311.09783},
+  year={2023}
+}              </pre>
        </div>
     </LI>
 </UL>
