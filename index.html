@@ -508,46 +508,9 @@ Pre-trained language models like ChatGPT have significantly improved code genera
 } </pre>
        </div>
     </LI>
-</UL>		  
-<UL>
-    <LI>
-    <B style="color: #224b8d">Struc-Bench: Are Large Language Models Really Good at Generating Complex Structured Data?
+</UL>	
 
-
-</B><BR>
-<B>Xiangru Tang</B>, Yiming Zong, Jason Phang, Yilun Zhao, Wangchunshu Zhou, Arman Cohan, Mark Gerstein.
-
-<BR>
-      <B>NAACL 2024</B><BR>
-      [<a href="https://arxiv.org/abs/2309.08963">PDF</a>]
-      [<a href="javascript:toggleBibtex('Struc-Bench_abs')" target=_self>Abstract</a>]
-      [<a href="javascript:toggleBibtex('Struc-Bench_bib')" target=_self>Bib</a>]
-<div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/Struc-Bench" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/Struc-Bench on GitHub">Struc-Bench</a>	   
-	<div id=Struc-Bench_abs class=blockcontent style="DISPLAY: none">
-	    <table class=imgtable>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p style="FONT-SIZE: 16px">
-Despite the power of Large Language Models (LLMs) like GPT-4, they still struggle with tasks that require generating complex, structured outputs. In this study, we assess the capability of Current LLMs in generating complex structured data and propose a structure-aware fine-tuning approach as a solution to improve this ability. To perform a comprehensive evaluation, we propose Struc-Bench, include five representative LLMs (i.e., GPT-NeoX 20B, GPT-3.5, GPT-4, and Vicuna) and evaluate them on our carefully constructed datasets spanning raw text, HTML, and LaTeX tables. Based on our analysis of current model performance, we identify specific common formatting errors and areas of potential improvement. To address complex formatting requirements, we utilize FormatCoT (Chain-of-Thought) to generate format instructions from target outputs. Our experiments show that our structure-aware fine-tuning method, when applied to LLaMA-7B, significantly improves adherence to natural language constraints, outperforming other evaluated LLMs. Based on these results, we present an ability map of model capabilities from six dimensions (i.e., coverage, formatting, reasoning, comprehension, pragmatics, and hallucination). This map highlights the weaknesses of LLMs in handling complex structured outputs and suggests promising directions for future work. Our code and models can be found at https://github.com/gersteinlab/Struc-Bench.
-		    </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id=Struc-Bench_bib class=blockcontent style="DISPLAY: none">
-            <pre>
-@article{tang2023struc,
-  title={Struc-Bench: Are Large Language Models Really Good at Generating Complex Structured Data?},
-  author={Tang, Xiangru and Zong, Yiming and Zhao, Yilun and Cohan, Arman and Gerstein, Mark},
-  journal={arXiv preprint arXiv:2309.08963},
-  year={2023}
-} </pre>
-       </div>
-    </LI>
-</UL>
-
+		  
 
 
 <UL>
@@ -632,6 +595,47 @@ Data contamination has garnered increased attention in the era of Large language
 
 
 
+
+<UL>
+    <LI>
+    <B style="color: #224b8d">Struc-Bench: Are Large Language Models Good at Generating Complex Structured Tabular Data?
+
+
+</B><BR>
+<B>Xiangru Tang</B>, Yiming Zong, Jason Phang, Yilun Zhao, Wangchunshu Zhou, Arman Cohan, Mark Gerstein.
+
+<BR>
+      <B>NAACL 2024</B><BR>
+      [<a href="https://arxiv.org/abs/2309.08963">PDF</a>]
+      [<a href="javascript:toggleBibtex('Struc-Bench_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('Struc-Bench_bib')" target=_self>Bib</a>]
+<div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/Struc-Bench" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/Struc-Bench on GitHub">Struc-Bench</a>	   
+	<div id=Struc-Bench_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Despite the remarkable capabilities of Large Language Models (LLMs) like GPT-4, producing complex, structured tabular data remains challenging. Our study assesses LLMs' proficiency in structuring tables and introduces a novel fine-tuning method, cognizant of data structures, to bolster their performance. We unveil Struc-Bench, a comprehensive benchmark featuring prominent LLMs (GPT-NeoX-20B, GPT-3.5, GPT-4, and Vicuna), which spans text tables, HTML, and LaTeX formats. Our proposed FormatCoT aids in crafting format-specific instructions from the intended outputs to populate this benchmark. Addressing the gap in task-centered evaluation, we propose two innovative metrics, P-Score (Prompting Score) and H-Score (Heuristical Score), to more accurately gauge LLM performance. Our experiments show that applying our structure-aware fine-tuning to LLaMA-7B leads to substantial performance gains, outshining its LLM counterparts across most measures. In-depth error analysis and creating an ability map across six dimensions, coverage, formatting, reasoning, comprehension, pragmatics, and hallucination, highlight areas for future enhancements and suggest forthcoming research trajectories. Our code and models can be found at https://github.com/gersteinlab/Struc-Bench.
+
+
+		    </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=Struc-Bench_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@article{tang2023struc,
+  title={Struc-Bench: Are Large Language Models Good at Generating Complex Structured Tabular Data?},
+  author={Tang, Xiangru and Zong, Yiming and Zhao, Yilun and Cohan, Arman and Gerstein, Mark},
+  journal={arXiv preprint arXiv:2309.08963},
+  year={2023}
+} </pre>
+       </div>
+    </LI>
+</UL>
 
 		  
 <UL>
