@@ -680,12 +680,27 @@ Despite the remarkable capabilities of Large Language Models (LLMs) like GPT-4, 
         </div>
         <div id=Struc-Bench_bib class=blockcontent style="DISPLAY: none">
             <pre>
-@article{tang2023struc,
-  title={Struc-Bench: Are Large Language Models Good at Generating Complex Structured Tabular Data?},
-  author={Tang, Xiangru and Zong, Yiming and Zhao, Yilun and Cohan, Arman and Gerstein, Mark},
-  journal={arXiv preprint arXiv:2309.08963},
-  year={2023}
-} </pre>
+@inproceedings{tang-etal-2024-struc,
+    title = "Struc-Bench: Are Large Language Models Good at Generating Complex Structured Tabular Data?",
+    author = "Tang, Xiangru  and
+      Zong, Yiming  and
+      Phang, Jason  and
+      Zhao, Yilun  and
+      Zhou, Wangchunshu  and
+      Cohan, Arman  and
+      Gerstein, Mark",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 2: Short Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-short.2",
+    pages = "12--34",
+    abstract = "Despite the remarkable capabilities of Large Language Models (LLMs) like GPT-4, producing complex, structured tabular data remains challenging. Our study assesses LLMs{'} proficiency in structuring tables and introduces a novel fine-tuning method, cognizant of data structures, to bolster their performance. We unveil Struc-Bench, a comprehensive benchmark featuring prominent LLMs (GPT-NeoX-20B, GPT-3.5, GPT-4, and Vicuna), which spans text tables, HTML, and LaTeX formats. Our proposed FormatCoT aids in crafting format-specific instructions from the intended outputs to populate this benchmark. Addressing the gap in task-centered evaluation, we propose two innovative metrics, P-Score (Prompting Score) and H-Score (Heuristical Score), to more accurately gauge LLM performance. Our experiments show that applying our structure-aware fine-tuning to LLaMA-7B leads to substantial performance gains, outshining its LLM counterparts across most measures. In-depth error analysis and creating an ability map across six dimensions, coverage, formatting, reasoning, comprehension, pragmatics, and hallucination, highlight areas for future enhancements and suggest forthcoming research trajectories. Our code and models can be found at https://github.com/gersteinlab/Struc-Bench.",
+}</pre>
        </div>
     </LI>
 </UL>
@@ -717,12 +732,25 @@ Recent observations have underscored a disparity between the inflated benchmark 
         </div>
         <div id=InvestigatingData_bib class=blockcontent style="DISPLAY: none">
             <pre>
-@article{deng2023investigating,
-  title={Investigating Data Contamination in Modern Benchmarks for Large Language Models},
-  author={Deng, Chunyuan and Zhao, Yilun and Tang, Xiangru and Gerstein, Mark and Cohan, Arman},
-  journal={arXiv preprint arXiv:2311.09783},
-  year={2023}
-}              </pre>
+@inproceedings{deng-etal-2024-investigating,
+    title = "Investigating Data Contamination in Modern Benchmarks for Large Language Models",
+    author = "Deng, Chunyuan  and
+      Zhao, Yilun  and
+      Tang, Xiangru  and
+      Gerstein, Mark  and
+      Cohan, Arman",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.482",
+    pages = "8698--8711",
+    abstract = "Recent observations have underscored a disparity between the inflated benchmark scores and the actual performance of LLMs, raising concerns about potential contamination of evaluation benchmarks. This issue is especially critical for closed-source models and certain open-source models where training data transparency is lacking. In this paper we study data contamination by proposing two methods tailored for both open-source and proprietary LLMs. We first introduce a retrieval-based system to explore potential overlaps between evaluation benchmarks and pretraining corpora. We further present a novel investigation protocol named Testset Slot Guessing (TS-Guessing), applicable to both open and proprietary models. This approach entails masking a wrong answer in a multiple-choice question and prompting the model to fill in the gap. Additionally, it involves obscuring an unlikely word in an evaluation example and asking the model to produce it. We find that certain commercial LLMs could surprisingly guess the missing option in various test sets. Specifically, in the MMLU benchmark, ChatGPT and GPT-4 demonstrated an exact match rate of 52{\%} and 57{\%}, respectively, in guessing the missing options in benchmark test data. We hope these results underscore the need for more robust evaluation methodologies and benchmarks in the field.",
+}            </pre>
        </div>
     </LI>
 </UL>
@@ -843,14 +871,33 @@ People primarily consult tables to conduct data analysis or answer specific ques
         </div>
         <div id=QTSumm_bib class=blockcontent style="DISPLAY: none">
             <pre>
-@misc{zhao2023qtsumm,
-      title={QTSUMM: Query-Focused Summarization over Tabular Data}, 
-      author={Yilun Zhao and Zhenting Qi and Linyong Nan and Boyu Mi and Yixin Liu and Weijin Zou and Simeng Han and Xiangru Tang and Yumo Xu and Arman Cohan and Dragomir Radev},
-      year={2023},
-      eprint={2305.14303},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}         </pre>
+@inproceedings{zhao-etal-2023-qtsumm,
+    title = "{QTS}umm: Query-Focused Summarization over Tabular Data",
+    author = "Zhao, Yilun  and
+      Qi, Zhenting  and
+      Nan, Linyong  and
+      Mi, Boyu  and
+      Liu, Yixin  and
+      Zou, Weijin  and
+      Han, Simeng  and
+      Chen, Ruizhe  and
+      Tang, Xiangru  and
+      Xu, Yumo  and
+      Radev, Dragomir  and
+      Cohan, Arman",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.74",
+    doi = "10.18653/v1/2023.emnlp-main.74",
+    pages = "1157--1172",
+    abstract = "People primarily consult tables to conduct data analysis or answer specific questions. Text generation systems that can provide accurate table summaries tailored to users{'} information needs can facilitate more efficient access to relevant data insights. Motivated by this, we define a new query-focused table summarization task, where text generation models have to perform human-like reasoning and analysis over the given table to generate a tailored summary. We introduce a new benchmark named QTSumm for this task, which contains 7,111 human-annotated query-summary pairs over 2,934 tables covering diverse topics. We investigate a set of strong baselines on QTSumm, including text generation, table-to-text generation, and large language models. Experimental results and manual analysis reveal that the new task presents significant challenges in table-to-text generation for future research. Moreover, we propose a new approach named ReFactor, to retrieve and reason over query-relevant information from tabular data to generate several natural language facts. Experimental results demonstrate that ReFactor can bring effective improvements to baselines by concatenating the generated facts to the model input. Our data and code are publicly available at https://github.com/yale-nlp/QTSumm.",
+}      </pre>
        </div>
     </LI>
 </UL>
@@ -885,14 +932,26 @@ Tabular data is prevalent across various industries, necessitating significant t
         </div>
         <div id=LLM-T2T_bib class=blockcontent style="DISPLAY: none">
             <pre>
-@misc{zhao2023investigating,
-      title={Investigating Table-to-Text Generation Capabilities of LLMs in Real-World Information Seeking Scenarios}, 
-      author={Yilun Zhao and Haowei Zhang and Shengyun Si and Linyong Nan and Xiangru Tang and Arman Cohan},
-      year={2023},
-      eprint={2305.14987},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}     </pre>
+@inproceedings{zhao-etal-2023-investigating,
+    title = "Investigating Table-to-Text Generation Capabilities of Large Language Models in Real-World Information Seeking Scenarios",
+    author = "Zhao, Yilun  and
+      Zhang, Haowei  and
+      Si, Shengyun  and
+      Nan, Linyong  and
+      Tang, Xiangru  and
+      Cohan, Arman",
+    editor = "Wang, Mingxuan  and
+      Zitouni, Imed",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-industry.17",
+    doi = "10.18653/v1/2023.emnlp-industry.17",
+    pages = "160--175",
+    abstract = "Tabular data is prevalent across various industries, necessitating significant time and effort for users to understand and manipulate for their information-seeking purposes. The advancements in large language models (LLMs) have shown enormous potential to improve user efficiency. However, the adoption of LLMs in real-world applications for table information seeking remains underexplored. In this paper, we investigate the table-to-text capabilities of different LLMs using four datasets within two real-world information seeking scenarios. These include the LogicNLG and our newly-constructed LoTNLG datasets for data insight generation, along with the FeTaQA and our newly-constructed F2WTQ datasets for query-based generation. We structure our investigation around three research questions, evaluating the performance of LLMs in table-to-text generation, automated evaluation, and feedback generation, respectively. Experimental results indicate that the current high-performing LLM, specifically GPT-4, can effectively serve as a table-to-text generator, evaluator, and feedback generator, facilitating users{'} information seeking purposes in real-world scenarios. However, a significant performance gap still exists between other open-sourced LLMs (e.g., Vicuna and LLaMA-2) and GPT-4 models. Our data and code are publicly available at https://github.com/yale-nlp/LLM-T2T.",
+}   </pre>
        </div>
     </LI>
 </UL>
