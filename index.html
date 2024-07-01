@@ -531,7 +531,7 @@ Artificial intelligence (AI)-driven methods can vastly improve the historically 
     <B style="color: #224b8d">MolLM: A Unified Language Model for Integrating Biomedical Text with 2D and 3D Molecular Representations</B><BR>
       <B>Xiangru Tang</B><span style="color: gray;">, Andrew Tran, Jeffrey Tan, Mark Gerstein.</span><BR>
       <B> ISMB 2024 </B> (published in Bioinformatics) <BR>
-      [<a href="https://www.biorxiv.org/content/10.1101/2023.11.25.568656v3">PDF</a>]
+      [<a href="https://academic.oup.com/bioinformatics/article/40/Supplement_1/i357/7700902">PDF</a>]
       [<a href="javascript:toggleBibtex('MolLM_abs')" target=_self>Abstract</a>]
       [<a href="javascript:toggleBibtex('MolLM_bib')" target=_self>Bib</a>]
 <div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/MolLM" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/MolLM on GitHub">MolLM</a>	   
@@ -551,12 +551,20 @@ The present paradigm of deep learning models for molecular representation relies
         </div>
         <div id=MolLM_bib class=blockcontent style="DISPLAY: none">
             <pre>
-@article{tang2023mollm,
-  title={MolLM: A Unified Language Model for Integrating Biomedical Text with 2D and 3D Molecular Representations},
-  author={Tang, Xiangru and Tran, Andrew and Tan, Jeffrey and Gerstein, Mark},
-  journal={Bioinformatics},
-  year={2024},
-  publisher={Oxford University Press}
+@article{10.1093/bioinformatics/btae260,
+    author = {Tang, Xiangru and Tran, Andrew and Tan, Jeffrey and Gerstein, Mark B},
+    title = "{MolLM: a unified language model for integrating biomedical text with 2D and 3D molecular representations}",
+    journal = {Bioinformatics},
+    volume = {40},
+    number = {Supplement_1},
+    pages = {i357-i368},
+    year = {2024},
+    month = {06},
+    abstract = "{The current paradigm of deep learning models for the joint representation of molecules and text primarily relies on 1D or 2D molecular formats, neglecting significant 3D structural information that offers valuable physical insight. This narrow focus inhibits the models’ versatility and adaptability across a wide range of modalities. Conversely, the limited research focusing on explicit 3D representation tends to overlook textual data within the biomedical domain.We present a unified pre-trained language model, MolLM, that concurrently captures 2D and 3D molecular information alongside biomedical text. MolLM consists of a text Transformer encoder and a molecular Transformer encoder, designed to encode both 2D and 3D molecular structures. To support MolLM’s self-supervised pre-training, we constructed 160K molecule-text pairings. Employing contrastive learning as a supervisory signal for learning, MolLM demonstrates robust molecular representation capabilities across four downstream tasks, including cross-modal molecule and text matching, property prediction, captioning, and text-prompted molecular editing. Through ablation, we demonstrate that the inclusion of explicit 3D representations improves performance in these downstream tasks.Our code, data, pre-trained model weights, and examples of using our model are all available at https://github.com/gersteinlab/MolLM. In particular, we provide Jupyter Notebooks offering step-by-step guidance on how to use MolLM to extract embeddings for both molecules and text.}",
+    issn = {1367-4811},
+    doi = {10.1093/bioinformatics/btae260},
+    url = {https://doi.org/10.1093/bioinformatics/btae260},
+    eprint = {https://academic.oup.com/bioinformatics/article-pdf/40/Supplement\_1/i357/58355106/btae260.pdf},
 } </pre>
        </div>
     </LI>
@@ -580,7 +588,7 @@ The present paradigm of deep learning models for molecular representation relies
      <B> ISMB 2024 </B> (published in Bioinformatics) <BR>
 	    <font color="#A6192E">"BioCoder input covers repository-level potential package dependencies, class declarations, & global variables."</font> <a href="https://x.com/_akhaliq/status/1697449549369942360" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>
 
-      [<a href="https://arxiv.org/abs/2308.16458">PDF</a>]
+      [<a href="https://academic.oup.com/bioinformatics/article/40/Supplement_1/i266/7700865">PDF</a>]
       [<a href="javascript:toggleBibtex('BioCoder_abs')" target=_self>Abstract</a>]
       [<a href="javascript:toggleBibtex('BioCoder_bib')" target=_self>Bib</a>]
 <div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/biocoder" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/biocoder on GitHub">BioCoder</a>	   
