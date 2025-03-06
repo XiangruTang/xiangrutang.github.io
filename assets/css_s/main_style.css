@@ -75,14 +75,14 @@ td {          /* for table */
 }
 
 #author-avatar {
-    height: 140px;
-    width: 140px;
+    height: 160px;
+    width: 160px;
     background-image: url('../../files/xr-fotor-20250305232158.png');
     background-position: -1px;
-    background-size: 150px;
+    background-size: 160px;
     background-repeat: no-repeat;
     border: 3px white solid;
-    margin-left: 150px;
+    margin-left: 160px;
     border-radius: 10%;
     margin-top: 30px;
     margin-bottom: 30px;
