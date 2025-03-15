@@ -222,13 +222,130 @@ Discover the  <a href="https://scholar.google.com/citations?hl=en&user=gGcRkpYAA
  <br>
 	   <br>
 
+		  
+
+<UL>
+    <LI>
+    <B style="color: #224b8d">[20] ML-Bench: Evaluating Large Language Models and Agents for Machine Learning Tasks on Repository-Level Code
+</B><BR>
+<B>Xiangru Tang*</B><span style="color: gray;">, Yuliang Liu*, Zefan Cai*, Junjie Lu, Yichi Zhang, Yanjun Shao, Zexuan Deng, Helan Hu, Kaikai An, Ruijun Huang, Shuzheng Si, Sheng Chen, Haozhe Zhao, Liang Chen, Yan Wang, Tianyu Liu, Zhiwei Jiang, Baobao Chang, Yujia Qin, Wangchunshu Zhou, Yilun Zhao, Arman Cohan, Mark Gerstein.</span>
+<BR>
+   <B>   ICLR 2025 Deep Learning for Code; ICLR 2025 Agentic AI for Scientific Discovery</B><BR>
+	<font color="#A6192E">"Can LLMs do machine learning tasks?"</font> <a href="https://x.com/XiangruTang/status/1801088490219676120" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>
+      [<a href="https://arxiv.org/abs/2311.09835">PDF</a>]
+      [<a href="javascript:toggleBibtex('ML-Bench_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('ML-Bench_bib')" target=_self>Bib</a>]
+<div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/ML-Bench" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/ML-Bench on GitHub">ML-Bench</a>	   
+	
+	<div id=ML-Bench_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Despite Large Language Models (LLMs) like GPT-4 achieving impressive results in function-level code generation, they struggle with repository-scale code understanding (e.g., coming up with the right arguments for calling routines), requiring a deeper comprehension of complex file interactions. Also, recently, people have developed LLM agents that attempt to interact with repository code (e.g., compiling and evaluating its execution), prompting the need to evaluate their performance. These gaps have motivated our development of ML-Bench, a benchmark rooted in real-world programming applications that leverage existing code repositories to perform tasks. Addressing the need for LLMs to interpret long code contexts and translate instructions into precise, executable scripts, ML-Bench encompasses annotated 9,641 examples across 18 GitHub repositories, challenging LLMs to accommodate user-specified arguments and documentation intricacies effectively. To evaluate both LLMs and AI agents, two setups are employed: ML-LLM-Bench for assessing LLMs' text-to-code conversion within a predefined deployment environment, and ML-Agent-Bench for testing autonomous agents in an end-to-end task execution within a Linux sandbox environment. Our findings indicate that while GPT-4o leads with a Pass@5 rate surpassing 50%, there remains significant scope for improvement, highlighted by issues such as hallucinated outputs and difficulties with bash script generation. Notably, in the more demanding ML-Agent-Bench, GPT-4o achieves a 76.47% success rate, reflecting the efficacy of iterative action and feedback in complex task resolution.
+			    </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=ML-Bench_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@article{tang2023ml,
+  title={ML-Bench: Evaluating Large Language Models and Agents for Machine Learning Tasks on Repository-Level Code},
+  author={Tang, Xiangru and Liu, Yuliang and Cai, Zefan and Shao, Yanjun and Lu, Junjie and Zhang, Yichi and Deng, Zexuan and Hu, Helan and Yang, Zengxian and An, Kaikai and others},
+  journal={arXiv preprint arXiv:2311.09835},
+  year={2023}
+} </pre>
+       </div>
+    </LI>
+</UL>
+
+<UL>
+    <LI>
+    <B style="color: #224b8d">[19] BC-Design: A Biochemistry-Aware Framework for High-Precision Inverse Protein Folding
+</B><BR>
+<B>Xiangru Tang*</B><span style="color: gray;">, Xinwu Ye*, Fang Wu*, Yanjun Shao, Yin Fang, Siming Chen, Dong Xu, Mark Gerstein.</span>
+<BR>
+      biorXiv, 2024<BR>
+	<font color="#A6192E">"A quantum leap in inverse protein folding from 67% to 88%!"</font> <a href="https://x.com/XiangruTang/status/1854268118916542644" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>
+      [<a href="https://www.biorxiv.org/content/10.1101/2024.10.28.620755v1">PDF</a>]
+      [<a href="javascript:toggleBibtex('ipf_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('ipf_bib')" target=_self>Bib</a>]
+<div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/BC-Design" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/BC-Design on GitHub">BC-Design</a>	   
+	
+	<div id=ipf_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Inverse protein folding, which aims to design amino acid sequences for desired protein structures, is fundamental to protein engineering and therapeutic development. While recent deep-learning approaches have made remarkable progress in addressing this challenge, they typically represent biochemical properties as discrete features associated with individual residues. Here, we present BC-Design, an approach that explicitly represents these properties as decorations on randomly sampled points on exterior surfaces and within internally bound regions representing the complete molecular extent of the protein. This provides a more natural way to capture the spatial distribution of properties. We demonstrate that BC-Design significantly outperforms all current methods, improving sequence recovery from 67% to 88.37% over the state-of-the-art methods (a 21.32% absolute improvement) and reducing perplexity from 2.4 to 1.47 (a 39.51% relative improvement) on the CATH 4.2 benchmark. Notably, our model exhibits robust generalization across diverse protein characteristics, achieving consistently high performance on proteins of varying sizes (50-500 residues), structural complexity (measured by contact order), and all major CATH fold classes. Through ablation tests, we compare the relative contribution of both structure encoding information and the encoded property information, and we show that both substantially contribute equally to this strong performance. Overall, this opens new avenues for computational protein engineering and drug discovery.
+			    </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=ipf_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@article{tang2024bc,
+  title={BC-Design: A Biochemistry-Aware Framework for High-Precision Inverse Protein Folding},
+  author={Tang, Xiangru and Ye, Xinwu and Wu, Fang and Shao, Yanjun and Fang, Yin and Chen, Siming and Xu, Dong and Gerstein, Mark},
+  journal={bioRxiv},
+  pages={2024--10},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory}
+} </pre>
+       </div>
+    </LI>
+</UL>
+
+		
+
+		    <UL>
+    <LI>
+    <B style="color: #224b8d">[18] Prioritizing Safeguarding Over Autonomy: Risks of LLM Agents for Science</B><BR>
+	   <B>Xiangru Tang</B><span style="color: gray;">, Qiao Jin, Kunlun Zhu, Tongxin Yuan, Yichi Zhang, Wangchunshu Zhou, Meng Qu, Yilun Zhao, Jian Tang, Zhuosheng Zhang, Arman Cohan, Zhiyong Lu, Mark Gerstein.</span>
+<BR>
+            <B> ICLR 2024 Workshop on LLM Agents </B><BR>
+      [<a href="https://arxiv.org/abs/2402.04247">PDF</a>]
+      [<a href="javascript:toggleBibtex('sciagent_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('sciagent_bib')" target=_self>Bib</a>]
+
+	<div id=sciagent_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Intelligent agents powered by large language models (LLMs) have demonstrated substantial promise in autonomously conducting experiments and facilitating scientific discoveries across various disciplines. While their capabilities are promising, they also introduce novel vulnerabilities that demand careful consideration for safety. However, there exists a notable gap in the literature, as there has been no comprehensive exploration of these vulnerabilities. This position paper fills this gap by conducting a thorough examination of vulnerabilities in LLM-based agents within scientific domains, shedding light on potential risks associated with their misuse and emphasizing the need for safety measures. We begin by providing a comprehensive overview of the potential risks inherent to scientific LLM agents, taking into account user intent, the specific scientific domain, and their potential impact on the external environment. Then, we delve into the origins of these vulnerabilities and provide a scoping review of the limited existing works. Based on our analysis, we propose a triadic framework involving human regulation, agent alignment, and an understanding of environmental feedback (agent regulation) to mitigate these identified risks. Furthermore, we highlight the limitations and challenges associated with safeguarding scientific agents and advocate for the development of improved models, robust benchmarks, and comprehensive regulations to address these issues effectively.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=sciagent_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@article{tang2024prioritizing,
+  title={Prioritizing Safeguarding Over Autonomy: Risks of LLM Agents for Science},
+  author={Tang, Xiangru and Jin, Qiao and Zhu, Kunlun and Yuan, Tongxin and Zhang, Yichi and Zhou, Wangchunshu and Qu, Meng and Zhao, Yilun and Tang, Jian and Zhang, Zhuosheng and others},
+  journal={arXiv preprint arXiv:2402.04247},
+  year={2024}
+}  </pre>
+       </div>
+    </LI>
+</UL>
+
 
 
 
 
 		    <UL>
     <LI>
-    <B style="color: #224b8d">[20] ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning</B><BR>
+    <B style="color: #224b8d">[17] ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning</B><BR>
 	   <B>Xiangru Tang*</B><span style="color: gray;">, Tianyu Hu*, Muyang Ye*, Yanjun Shao*, Xunjian Yin, Siru Ouyang, Wangchunshu Zhou, Pan Lu, Zhuosheng Zhang, Yilun Zhao, Arman Cohan, Mark Gerstein.</span>
 <BR>
       <B> ICLR 2025 </B> <BR>
@@ -265,7 +382,7 @@ Chemical reasoning usually involves complex, multi-step processes that demand pr
 
 		  <UL>
     <LI>
-    <B style="color: #224b8d">[19] Fast, Sensitive Detection of Protein Homologs Using Deep Dense Retrieval</B><BR>
+    <B style="color: #224b8d">[16] Fast, Sensitive Detection of Protein Homologs Using Deep Dense Retrieval</B><BR>
 
 	    <span style="color: gray;">Liang Hong*, Zhihang Hu*, Siqi Sun*,</span> <B>Xiangru Tang*</B><span style="color: gray;">, Jiuming Wang, Qingxiong Tan, Liangzhen Zheng, Sheng Wang, Sheng Xu, Irwin King, Mark Gerstein, Yu Li.</span><BR>
 
@@ -311,7 +428,7 @@ The identification of protein homologs in large databases using conventional met
   
 		  <UL>
     <LI>
-    <B style="color: #224b8d">[18] Igniting Language Intelligence: The Hitchhiker's Guide From Chain-of-Thought Reasoning to Language Agents</B><BR>
+    <B style="color: #224b8d">[15] Igniting Language Intelligence: The Hitchhiker's Guide From Chain-of-Thought Reasoning to Language Agents</B><BR>
 	  <span style="color: gray;">Zhuosheng Zhang, Yao Yao, Aston Zhang,</span> <B>Xiangru Tang</B><span style="color: gray;">, Xinbei Ma, Zhiwei He, Yiming Wang, Mark Gerstein, Rui Wang, Gongshen Liu, Hai Zhao.</span>
 <BR>
             <B>ACM Computing Surveys, 2024</B> (IF=23.8)<BR>
@@ -349,7 +466,7 @@ Large language models (LLMs) have dramatically enhanced the field of language in
   
 		  <UL>
     <LI>
-    <B style="color: #224b8d">[17] Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity</B><BR>
+    <B style="color: #224b8d">[14] Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity</B><BR>
 	   <span style="color: gray;">Cunxiang Wang*, Xiaoze Liu*, Yuanhao Yue*,</span> <B>Xiangru Tang</B><span style="color: gray;">, Tianhang Zhang, Cheng Jiayang, Yunzhi Yao, Wenyang Gao, Xuming Hu, Zehan Qi, Yidong Wang, Linyi Yang, Jindong Wang, Xing Xie, Zheng Zhang, Yue Zhang.</span>
 <BR>
             <B>ACM Computing Surveys, 2024</B> (IF=23.8)<BR>
@@ -393,7 +510,7 @@ This survey addresses the crucial issue of factuality in Large Language Models (
 
 		  <UL>
     <LI>
-    <B style="color: #224b8d">[16] MIMIR: A Customizable Agent Tuning Platform for Enhanced Scientific Applications</B><BR>
+    <B style="color: #224b8d">[13] MIMIR: A Customizable Agent Tuning Platform for Enhanced Scientific Applications</B><BR>
 	   <B>Xiangru Tang*</B><span style="color: gray;">, Chunyuan Deng*, Hanmin Wang*, Haoran Wang*, Yilun Zhao, Wenqi Shi, Yi Fung, Wangchunshu Zhou, Jiannan Cao, Heng Ji, Arman Cohan, Mark Gerstein.</span>
 <BR>
       <B> EMNLP 2024 </B> <BR>
@@ -449,48 +566,13 @@ Recently, large language models (LLMs) have evolved into interactive agents, pro
 		  
 
 		  
-		  <UL>
-    <LI>
-    <B style="color: #224b8d">[15] Prioritizing Safeguarding Over Autonomy: Risks of LLM Agents for Science</B><BR>
-	   <B>Xiangru Tang</B><span style="color: gray;">, Qiao Jin, Kunlun Zhu, Tongxin Yuan, Yichi Zhang, Wangchunshu Zhou, Meng Qu, Yilun Zhao, Jian Tang, Zhuosheng Zhang, Arman Cohan, Zhiyong Lu, Mark Gerstein.</span>
-<BR>
-            <B> ICLR 2024 Workshop on LLM Agents </B><BR>
-      [<a href="https://arxiv.org/abs/2402.04247">PDF</a>]
-      [<a href="javascript:toggleBibtex('sciagent_abs')" target=_self>Abstract</a>]
-      [<a href="javascript:toggleBibtex('sciagent_bib')" target=_self>Bib</a>]
-
-	<div id=sciagent_abs class=blockcontent style="DISPLAY: none">
-	    <table class=imgtable>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p style="FONT-SIZE: 16px">
-Intelligent agents powered by large language models (LLMs) have demonstrated substantial promise in autonomously conducting experiments and facilitating scientific discoveries across various disciplines. While their capabilities are promising, they also introduce novel vulnerabilities that demand careful consideration for safety. However, there exists a notable gap in the literature, as there has been no comprehensive exploration of these vulnerabilities. This position paper fills this gap by conducting a thorough examination of vulnerabilities in LLM-based agents within scientific domains, shedding light on potential risks associated with their misuse and emphasizing the need for safety measures. We begin by providing a comprehensive overview of the potential risks inherent to scientific LLM agents, taking into account user intent, the specific scientific domain, and their potential impact on the external environment. Then, we delve into the origins of these vulnerabilities and provide a scoping review of the limited existing works. Based on our analysis, we propose a triadic framework involving human regulation, agent alignment, and an understanding of environmental feedback (agent regulation) to mitigate these identified risks. Furthermore, we highlight the limitations and challenges associated with safeguarding scientific agents and advocate for the development of improved models, robust benchmarks, and comprehensive regulations to address these issues effectively.
-                            </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id=sciagent_bib class=blockcontent style="DISPLAY: none">
-            <pre>
-@article{tang2024prioritizing,
-  title={Prioritizing Safeguarding Over Autonomy: Risks of LLM Agents for Science},
-  author={Tang, Xiangru and Jin, Qiao and Zhu, Kunlun and Yuan, Tongxin and Zhang, Yichi and Zhou, Wangchunshu and Qu, Meng and Zhao, Yilun and Tang, Jian and Zhang, Zhuosheng and others},
-  journal={arXiv preprint arXiv:2402.04247},
-  year={2024}
-}  </pre>
-       </div>
-    </LI>
-</UL>
-
-
+		
 
 		  
 			  
 <UL>
     <LI>
-    <B style="color: #224b8d">[14] Step-Back Profiling: Distilling User History for Personalized Scientific Writing</B><BR>
+    <B style="color: #224b8d">[12] Step-Back Profiling: Distilling User History for Personalized Scientific Writing</B><BR>
      <B>Xiangru Tang</B><span style="color: gray;">, Xingyao Zhang, Yanjun Shao, Jie Wu, Yilun Zhao, Arman Cohan, Ming Gong, Dongmei Zhang, Mark Gerstein.</span><BR>
 	
 	  <B>  IJCAI 2024 Workshop on AI4Research (Best Paper Award) </B>  <BR>
@@ -528,7 +610,7 @@ Large language models (LLMs) excel at a variety of natural language processing t
 	
 <UL>
     <LI>
-    <B style="color: #224b8d">[13] D-Flow: Multi-modality Flow Matching for D-peptide Design
+    <B style="color: #224b8d">[11] D-Flow: Multi-modality Flow Matching for D-peptide Design
 </B><BR>
 <span style="color: gray;">Fang Wu, Tinson Xu, Shuting Jin,</span> <B>Xiangru Tang</B><span style="color: gray;">, Zerui Xu, James Zou, Brian Hie.</span>
 <BR>
@@ -563,86 +645,7 @@ Proteins play crucial roles in biological processes, with therapeutic peptides e
     </LI>
 </UL>
 
-		  
-<UL>
-    <LI>
-    <B style="color: #224b8d">[12] BC-Design: A Biochemistry-Aware Framework for High-Precision Inverse Protein Folding
-</B><BR>
-<B>Xiangru Tang*</B><span style="color: gray;">, Xinwu Ye*, Fang Wu*, Yanjun Shao, Yin Fang, Siming Chen, Dong Xu, Mark Gerstein.</span>
-<BR>
-      biorXiv, 2024<BR>
-	<font color="#A6192E">"A quantum leap in inverse protein folding from 67% to 88%!"</font> <a href="https://x.com/XiangruTang/status/1854268118916542644" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>
-      [<a href="https://www.biorxiv.org/content/10.1101/2024.10.28.620755v1">PDF</a>]
-      [<a href="javascript:toggleBibtex('ipf_abs')" target=_self>Abstract</a>]
-      [<a href="javascript:toggleBibtex('ipf_bib')" target=_self>Bib</a>]
-<div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/BC-Design" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/BC-Design on GitHub">BC-Design</a>	   
-	
-	<div id=ipf_abs class=blockcontent style="DISPLAY: none">
-	    <table class=imgtable>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p style="FONT-SIZE: 16px">
-Inverse protein folding, which aims to design amino acid sequences for desired protein structures, is fundamental to protein engineering and therapeutic development. While recent deep-learning approaches have made remarkable progress in addressing this challenge, they typically represent biochemical properties as discrete features associated with individual residues. Here, we present BC-Design, an approach that explicitly represents these properties as decorations on randomly sampled points on exterior surfaces and within internally bound regions representing the complete molecular extent of the protein. This provides a more natural way to capture the spatial distribution of properties. We demonstrate that BC-Design significantly outperforms all current methods, improving sequence recovery from 67% to 88.37% over the state-of-the-art methods (a 21.32% absolute improvement) and reducing perplexity from 2.4 to 1.47 (a 39.51% relative improvement) on the CATH 4.2 benchmark. Notably, our model exhibits robust generalization across diverse protein characteristics, achieving consistently high performance on proteins of varying sizes (50-500 residues), structural complexity (measured by contact order), and all major CATH fold classes. Through ablation tests, we compare the relative contribution of both structure encoding information and the encoded property information, and we show that both substantially contribute equally to this strong performance. Overall, this opens new avenues for computational protein engineering and drug discovery.
-			    </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id=ipf_bib class=blockcontent style="DISPLAY: none">
-            <pre>
-@article{tang2024bc,
-  title={BC-Design: A Biochemistry-Aware Framework for High-Precision Inverse Protein Folding},
-  author={Tang, Xiangru and Ye, Xinwu and Wu, Fang and Shao, Yanjun and Fang, Yin and Chen, Siming and Xu, Dong and Gerstein, Mark},
-  journal={bioRxiv},
-  pages={2024--10},
-  year={2024},
-  publisher={Cold Spring Harbor Laboratory}
-} </pre>
-       </div>
-    </LI>
-</UL>
-
-		  
-
-<UL>
-    <LI>
-    <B style="color: #224b8d">[11] ML-Bench: Evaluating Large Language Models and Agents for Machine Learning Tasks on Repository-Level Code
-</B><BR>
-<B>Xiangru Tang*</B><span style="color: gray;">, Yuliang Liu*, Zefan Cai*, Junjie Lu, Yichi Zhang, Yanjun Shao, Zexuan Deng, Helan Hu, Kaikai An, Ruijun Huang, Shuzheng Si, Sheng Chen, Haozhe Zhao, Liang Chen, Yan Wang, Tianyu Liu, Zhiwei Jiang, Baobao Chang, Yujia Qin, Wangchunshu Zhou, Yilun Zhao, Arman Cohan, Mark Gerstein.</span>
-<BR>
-   <B>   ICLR 2025 Deep Learning for Code; ICLR 2025 Agentic AI for Scientific Discovery</B><BR>
-	<font color="#A6192E">"Can LLMs do machine learning tasks?"</font> <a href="https://x.com/XiangruTang/status/1801088490219676120" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>
-      [<a href="https://arxiv.org/abs/2311.09835">PDF</a>]
-      [<a href="javascript:toggleBibtex('ML-Bench_abs')" target=_self>Abstract</a>]
-      [<a href="javascript:toggleBibtex('ML-Bench_bib')" target=_self>Bib</a>]
-<div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/ML-Bench" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/ML-Bench on GitHub">ML-Bench</a>	   
-	
-	<div id=ML-Bench_abs class=blockcontent style="DISPLAY: none">
-	    <table class=imgtable>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p style="FONT-SIZE: 16px">
-Despite Large Language Models (LLMs) like GPT-4 achieving impressive results in function-level code generation, they struggle with repository-scale code understanding (e.g., coming up with the right arguments for calling routines), requiring a deeper comprehension of complex file interactions. Also, recently, people have developed LLM agents that attempt to interact with repository code (e.g., compiling and evaluating its execution), prompting the need to evaluate their performance. These gaps have motivated our development of ML-Bench, a benchmark rooted in real-world programming applications that leverage existing code repositories to perform tasks. Addressing the need for LLMs to interpret long code contexts and translate instructions into precise, executable scripts, ML-Bench encompasses annotated 9,641 examples across 18 GitHub repositories, challenging LLMs to accommodate user-specified arguments and documentation intricacies effectively. To evaluate both LLMs and AI agents, two setups are employed: ML-LLM-Bench for assessing LLMs' text-to-code conversion within a predefined deployment environment, and ML-Agent-Bench for testing autonomous agents in an end-to-end task execution within a Linux sandbox environment. Our findings indicate that while GPT-4o leads with a Pass@5 rate surpassing 50%, there remains significant scope for improvement, highlighted by issues such as hallucinated outputs and difficulties with bash script generation. Notably, in the more demanding ML-Agent-Bench, GPT-4o achieves a 76.47% success rate, reflecting the efficacy of iterative action and feedback in complex task resolution.
-			    </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id=ML-Bench_bib class=blockcontent style="DISPLAY: none">
-            <pre>
-@article{tang2023ml,
-  title={ML-Bench: Evaluating Large Language Models and Agents for Machine Learning Tasks on Repository-Level Code},
-  author={Tang, Xiangru and Liu, Yuliang and Cai, Zefan and Shao, Yanjun and Lu, Junjie and Zhang, Yichi and Deng, Zexuan and Hu, Helan and Yang, Zengxian and An, Kaikai and others},
-  journal={arXiv preprint arXiv:2311.09835},
-  year={2023}
-} </pre>
-       </div>
-    </LI>
-</UL>
+		    
 
 
 	  <UL>
