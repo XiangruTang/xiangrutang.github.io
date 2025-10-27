@@ -264,14 +264,98 @@ I have been a research intern with Google Search and Google DeepMind. I have int
 	   <br>
 		  		   <br>
 
-		  	        
+
+
+
+<UL>
+    <LI>
+    <B style="color: #224b8d">[5] Eigen-1: Adaptive Multi-Agent Refinement with Monitor-Based RAG for Scientific Reasoning
+
+</B><BR>
+<B>Xiangru Tang</B><span style="color: gray;">, Wanghan Xu, Yujie Wang, Zijie Guo, Daniel Shao, Jiapeng Chen, Cixuan Zhang, Ziyi Wang, Lixin Zhang, Guancheng Wan, Wenlong Zhang, Lei Bai, Zhenfei Yin, Philip Torr, Hanrui Wang, Di Jin.</span>
+<BR>
+      [<a href="https://arxiv.org/abs/2509.21193">PDF</a>]
+      [<a href="javascript:toggleBibtex('Eigen_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('Eigen_bib')" target=_self>Bib</a>]
+<div style="padding-top:5px"> <a class="github-button" href="https://github.com/tangxiangru/Eigen-1" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star tangxiangru/Eigen-1 on GitHub">Eigen-1</a>	   
+	
+	<div id=Eigen_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Large language models (LLMs) have recently shown strong progress on scientific reasoning, yet two major bottlenecks remain. First, explicit retrieval fragments reasoning, imposing a hidden "tool tax" of extra tokens and steps. Second, multi-agent pipelines often dilute strong solutions by averaging across all candidates. We address these challenges with a unified framework that combines implicit retrieval and structured collaboration. At its foundation, a Monitor-based retrieval module operates at the token level, integrating external knowledge with minimal disruption to reasoning. On top of this substrate, Hierarchical Solution Refinement (HSR) iteratively designates each candidate as an anchor to be repaired by its peers, while Quality-Aware Iterative Reasoning (QAIR) adapts refinement to solution quality. On Humanity's Last Exam (HLE) Bio/Chem Gold, our framework achieves 48.3\% accuracy -- the highest reported to date, surpassing the strongest agent baseline by 13.4 points and leading frontier LLMs by up to 18.1 points, while simultaneously reducing token usage by 53.5\% and agent steps by 43.7\%. Results on SuperGPQA and TRQA confirm robustness across domains. Error analysis shows that reasoning failures and knowledge gaps co-occur in over 85\% of cases, while diversity analysis reveals a clear dichotomy: retrieval tasks benefit from solution variety, whereas reasoning tasks favor consensus. Together, these findings demonstrate how implicit augmentation and structured refinement overcome the inefficiencies of explicit tool use and uniform aggregation.                         </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=Eigen_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@article{tang2025eigen,
+  title={Eigen-1: Adaptive Multi-Agent Refinement with Monitor-Based RAG for Scientific Reasoning},
+  author={Tang, Xiangru and Xu, Wanghan and Wang, Yujie and Guo, Zijie and Shao, Daniel and Chen, Jiapeng and Zhang, Cixuan and Wang, Ziyi and Zhang, Lixin and Wan, Guancheng and others},
+  journal={arXiv preprint arXiv:2509.21193},
+  year={2025}
+}</pre>
+       </div>
+    </LI>
+</UL>
+
+
+
+
+			  
+<UL>
+    <LI>
+    <B style="color: #224b8d">[4] Cellforge: Agentic design of virtual cell models
+
+</B><BR>
+<B>Xiangru Tang</B><span style="color: gray;">, Zhuoyun Yu, Jiapeng Chen, Yan Cui, Daniel Shao, Weixu Wang, Fang Wu, Yuchen Zhuang, Wenqi Shi, Zhi Huang, Arman Cohan, Xihong Lin, Fabian Theis, Smita Krishnaswamy, Mark Gerstein.</span>
+<BR>
+	  <B> ICML GenBio Workshop 2025 </B>  <BR>
+      [<a href="https://arxiv.org/pdf/2508.02276">PDF</a>]
+      [<a href="javascript:toggleBibtex('CellForge_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('CellForge_bib')" target=_self>Bib</a>]
+<div style="padding-top:5px"> <a class="github-button" href="https://github.com/gersteinlab/CellForge" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star gersteinlab/CellForge on GitHub">CellForge</a>	   
+	
+	<div id=CellForge_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Virtual cell modeling represents an emerging frontier at the intersection of artificial intelligence and biology, aiming to predict quantities such as responses to diverse perturbations quantitatively. However, autonomously building computational models for virtual cells is challenging due to the complexity of biological systems, the heterogeneity of data modalities, and the need for domain-specific expertise across multiple disciplines. Here, we introduce CELLFORGE, an agentic system that leverages a multi-agent framework that transforms presented biological datasets and research objectives directly into optimized computational models for virtual cells. More specifically, given only raw single-cell multi-omics data and task descriptions as input (e.g., for control and perturbed conditions and a directive to build a model of a new perturbation), CELLFORGE outputs both an optimized model architecture and executable code for training virtual cell models and inference. The framework integrates three core modules: Task Analysis for presented dataset characterization and relevant literature retrieval, Method Design, where specialized agents collaboratively develop optimized modeling strategies, and Experiment Execution for automated generation of code. The agents in the Design module are separated into experts with differing perspectives and a central moderator, and have to collaboratively exchange solutions until they achieve a reasonable consensus. We demonstrate CELLFORGE’s capabilities in single-cell perturbation prediction, using six diverse datasets that encompass gene knockouts, drug treatments, and cytokine stimulations across multiple modalities. CELLFORGE consistently outperforms task-specific state-of-the-art methods, achieving up to 40% reduction in prediction error and 20% improvement in correlation metrics. Overall, CELLFORGE demonstrates how iterative interaction between LLM agents with differing perspectives provides better solutions than directly addressing a modeling challenge in computational biology.			    </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=Cellforge_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@article{tang2025cellforge,
+  title={Cellforge: Agentic design of virtual cell models},
+  author={Tang, Xiangru and Yu, Zhuoyun and Chen, Jiapeng and Cui, Yan and Shao, Daniel and Wang, Weixu and Wu, Fang and Zhuang, Yuchen and Shi, Wenqi and Huang, Zhi and others},
+  journal={arXiv preprint arXiv:2508.02276},
+  year={2025}
+}</pre>
+       </div>
+    </LI>
+</UL>
+
+
+
+
+
+
+			  
 <UL>
     <LI>
     <B style="color: #224b8d">[3] Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving
 </B><BR>
 <B>Xiangru Tang</B><span style="color: gray;">, Tianrui Qin, Tianhao Peng, Ziyang Zhou, Daniel Shao, Tingting Du, Xinming Wei, Peng Xia, Fang Wu, He Zhu, Ge Zhang, Jiaheng Liu, Xingyao Wang, Sirui Hong, Chenglin Wu, Hao Cheng, Chi Wang, Wangchunshu Zhou.</span>
 <BR>
-	  <B>  ICML 2025 Workshop on CFAgentic (Best Paper Runner-up Award) </B>  <BR>
+	  <B> ICML 2025 Workshop on CFAgentic (Best Paper Runner-up Award) </B>  <BR>
       [<a href="https://arxiv.org/abs/2507.06229">PDF</a>]
       [<a href="javascript:toggleBibtex('AgentKB_abs')" target=_self>Abstract</a>]
       [<a href="javascript:toggleBibtex('AgentKB_bib')" target=_self>Bib</a>]
