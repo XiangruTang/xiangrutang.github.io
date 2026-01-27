@@ -272,43 +272,6 @@ During my PhD, I have also spent some fun time as a research scientist intern at
 
 
 
-<UL>
-    <LI>
-    <B style="color: #224b8d">[R.5] Eigen-1: Adaptive Multi-Agent Refinement with Monitor-Based RAG for Scientific Reasoning
-
-</B><BR>
-<B>Xiangru Tang</B><span style="color: gray;">, Wanghan Xu, Yujie Wang, Zijie Guo, Daniel Shao, Jiapeng Chen, Cixuan Zhang, Ziyi Wang, Lixin Zhang, Guancheng Wan, Wenlong Zhang, Lei Bai, Zhenfei Yin, Philip Torr, Hanrui Wang, Di Jin.</span>
-<BR>
-      [<a href="https://arxiv.org/abs/2509.21193">PDF</a>]
-      [<a href="javascript:toggleBibtex('Eigen_abs')" target=_self>Abstract</a>]
-      [<a href="javascript:toggleBibtex('Eigen_bib')" target=_self>Bib</a>]
-<div style="padding-top:5px"> <a class="github-button" href="https://github.com/tangxiangru/Eigen-1" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star tangxiangru/Eigen-1 on GitHub">Eigen-1</a>	   
-	
-	<div id=Eigen_abs class=blockcontent style="DISPLAY: none">
-	    <table class=imgtable>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p style="FONT-SIZE: 16px">
-Large language models (LLMs) have recently shown strong progress on scientific reasoning, yet two major bottlenecks remain. First, explicit retrieval fragments reasoning, imposing a hidden "tool tax" of extra tokens and steps. Second, multi-agent pipelines often dilute strong solutions by averaging across all candidates. We address these challenges with a unified framework that combines implicit retrieval and structured collaboration. At its foundation, a Monitor-based retrieval module operates at the token level, integrating external knowledge with minimal disruption to reasoning. On top of this substrate, Hierarchical Solution Refinement (HSR) iteratively designates each candidate as an anchor to be repaired by its peers, while Quality-Aware Iterative Reasoning (QAIR) adapts refinement to solution quality. On Humanity's Last Exam (HLE) Bio/Chem Gold, our framework achieves 48.3\% accuracy -- the highest reported to date, surpassing the strongest agent baseline by 13.4 points and leading frontier LLMs by up to 18.1 points, while simultaneously reducing token usage by 53.5\% and agent steps by 43.7\%. Results on SuperGPQA and TRQA confirm robustness across domains. Error analysis shows that reasoning failures and knowledge gaps co-occur in over 85\% of cases, while diversity analysis reveals a clear dichotomy: retrieval tasks benefit from solution variety, whereas reasoning tasks favor consensus. Together, these findings demonstrate how implicit augmentation and structured refinement overcome the inefficiencies of explicit tool use and uniform aggregation.                         </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id=Eigen_bib class=blockcontent style="DISPLAY: none">
-            <pre>
-@article{tang2025eigen,
-  title={Eigen-1: Adaptive Multi-Agent Refinement with Monitor-Based RAG for Scientific Reasoning},
-  author={Tang, Xiangru and Xu, Wanghan and Wang, Yujie and Guo, Zijie and Shao, Daniel and Chen, Jiapeng and Zhang, Cixuan and Wang, Ziyi and Zhang, Lixin and Wan, Guancheng and others},
-  journal={arXiv preprint arXiv:2509.21193},
-  year={2025}
-}</pre>
-       </div>
-    </LI>
-</UL>
-
-
-
 
 			  
 <UL>
@@ -508,7 +471,49 @@ Inverse protein folding, which aims to design amino acid sequences for desired p
           <div>
 	
 
-		  
+
+
+
+
+<UL>
+    <LI>
+    <B style="color: #224b8d">[S.18] Eigen-1: Adaptive Multi-Agent Refinement with Monitor-Based RAG for Scientific Reasoning
+
+</B><BR>
+<B>Xiangru Tang</B><span style="color: gray;">, Wanghan Xu, Yujie Wang, Zijie Guo, Daniel Shao, Jiapeng Chen, Cixuan Zhang, Ziyi Wang, Lixin Zhang, Guancheng Wan, Wenlong Zhang, Lei Bai, Zhenfei Yin, Philip Torr, Hanrui Wang, Di Jin.</span>
+<BR>
+		      <B> ICLR 2026 </B> <BR>
+      [<a href="https://arxiv.org/abs/2509.21193">PDF</a>]
+      [<a href="javascript:toggleBibtex('Eigen_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('Eigen_bib')" target=_self>Bib</a>]
+<div style="padding-top:5px"> <a class="github-button" href="https://github.com/tangxiangru/Eigen-1" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star tangxiangru/Eigen-1 on GitHub">Eigen-1</a>	   
+	
+	<div id=Eigen_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Large language models (LLMs) have recently shown strong progress on scientific reasoning, yet two major bottlenecks remain. First, explicit retrieval fragments reasoning, imposing a hidden "tool tax" of extra tokens and steps. Second, multi-agent pipelines often dilute strong solutions by averaging across all candidates. We address these challenges with a unified framework that combines implicit retrieval and structured collaboration. At its foundation, a Monitor-based retrieval module operates at the token level, integrating external knowledge with minimal disruption to reasoning. On top of this substrate, Hierarchical Solution Refinement (HSR) iteratively designates each candidate as an anchor to be repaired by its peers, while Quality-Aware Iterative Reasoning (QAIR) adapts refinement to solution quality. On Humanity's Last Exam (HLE) Bio/Chem Gold, our framework achieves 48.3\% accuracy -- the highest reported to date, surpassing the strongest agent baseline by 13.4 points and leading frontier LLMs by up to 18.1 points, while simultaneously reducing token usage by 53.5\% and agent steps by 43.7\%. Results on SuperGPQA and TRQA confirm robustness across domains. Error analysis shows that reasoning failures and knowledge gaps co-occur in over 85\% of cases, while diversity analysis reveals a clear dichotomy: retrieval tasks benefit from solution variety, whereas reasoning tasks favor consensus. Together, these findings demonstrate how implicit augmentation and structured refinement overcome the inefficiencies of explicit tool use and uniform aggregation.                         </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=Eigen_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@article{tang2025eigen,
+  title={Eigen-1: Adaptive Multi-Agent Refinement with Monitor-Based RAG for Scientific Reasoning},
+  author={Tang, Xiangru and Xu, Wanghan and Wang, Yujie and Guo, Zijie and Shao, Daniel and Chen, Jiapeng and Zhang, Cixuan and Wang, Ziyi and Zhang, Lixin and Wan, Guancheng and others},
+  journal={arXiv preprint arXiv:2509.21193},
+  year={2025}
+}</pre>
+       </div>
+    </LI>
+</UL>
+
+
+
+			  
 		
 
 
