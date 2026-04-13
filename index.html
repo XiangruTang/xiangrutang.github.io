@@ -1427,7 +1427,48 @@ Current pre-trained models applied for summarization are prone to factual incons
 
 			  
 		  
+ <UL>
+    <LI>
+    <B style="color: #224b8d">[O.10] Beyond Magic Words: Sharpness-Aware Prompt Evolving for Robust Large Language Models with TARE
+</B><BR>
+	   <span style="color: gray;">Guancheng Wan, Lucheng Fu, Haoxin Liu, Yiqiao Jin, Hui Yi Leong, Eric Hanchen Jiang, Hejia Geng, Jinhe Bi, Yunpu Ma, </span> <B>Xiangru Tang*</B>, B. Aditya Prakash*, Yizhou Sun*, Wei Wang*
+<BR>
+      <B> ICLR 2026</B> <BR>
+      [<a href="https://openreview.net/pdf?id=YEBDvqsniH">PDF</a>]
+      [<a href="javascript:toggleBibtex('TARE_abs')" target=_self>Abstract</a>]
+      [<a href="javascript:toggleBibtex('TARE_bib')" target=_self>Bib</a>]
+	    <div style="padding-top:5px"> <a class="github-button" href="https://github.com/GuanchengWan/TARE" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star GuanchengWan/TARE on GitHub">TARE</a>	   
 
+	<div id=TARE_abs class=blockcontent style="DISPLAY: none">
+	    <table class=imgtable>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+The performance of Large Language Models (LLMs) hinges on carefully engineered prompts. However, prevailing prompt optimization methods, ranging from heuristic edits and reinforcement learning to evolutionary search, primarily target point-wise accuracy. They seldom enforce paraphrase invariance or searching stability, and therefore cannot remedy this brittleness in practice. Automated prompt search remains brittle: small, semantically preserving paraphrases often cause large performance swings. We identify this brittleness as the textual sharpness of the prompt landscape. In this work, we provide the first formal treatment of textual sharpness in the discrete, semantic space of prompts, together with an operational robustness criterion over a semantic neighborhood; the design is black-box or API-only, requiring no gradients to update the model's parameters. Then we introduce TARE (Textual Sharpness-Aware Evolving), a derivative-free framework that alternates between an inner, sampling-based adversarial search that stresses a prompt with hard paraphrases and an outer, robust selection that prefers candidates whose neighborhoods remain strong. We further propose ATARE, which learns anisotropic weights to shape the semantic neighborhood and adapts its radius over time to balance exploration and fidelity. Diverse tasks evaluate our methods, whose design for minimizing textual sharpness gap leads to prompts that preserve accuracy under paraphrasing, outperforming accuracy-only prompt search while remaining computationally practical. The code is available for anonymous access at https://anonymous.4open.science/r/ATARE_TARE/.
+			    </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TARE_bib class=blockcontent style="DISPLAY: none">
+            <pre>
+@inproceedings{
+wan2026beyond,
+title={Beyond Magic Words: Sharpness-Aware Prompt Evolving for Robust Large Language Models with {TARE}},
+author={Guancheng Wan and Lucheng Fu and Haoxin Liu and Yiqiao Jin and Hui Yi Leong and Eric Hanchen Jiang and Hejia Geng and Jinhe Bi and Yunpu Ma and Xiangru Tang and B. Aditya Prakash and Yizhou Sun and Wei Wang},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=YEBDvqsniH}
+} </pre>
+       </div>
+    </LI>
+</UL>
+
+
+
+			  
 		  
  <UL>
     <LI>
